@@ -103,6 +103,7 @@ window.onload = function(){
   }
   document.getElementById("changeTimer").onclick = function(){
     clearTimeout(timeout);
+    document.getElementById("pause").innerHTML = "pause";
     if(document.getElementById("changeTimer").innerHTML == "Take a break"){
       currentInfo.currentTimer = "breakTime";
       currentInfo.remainingTime = currentInfo.breakTime * 60;
