@@ -4,7 +4,7 @@ var currentInfo = {
   currentTimer : "workTime",
   remainingTime : 25 * 60
 };
-var audio = new Audio("http://soundbible.com/grab.php?id=1815&type=mp3")
+var audio = new Audio("tone.mp3")
 
 var timeout;
 function timer(time){
@@ -47,7 +47,6 @@ function rotation(time){
   else{
     document.getElementById("numberTimer").innerHTML = "";
   }
-  console.log(-rotation)
   document.getElementById("fullClock").style.transform = "translate(-50%, -50%) rotate(" + -rotation + "deg)";
 }
 
@@ -58,7 +57,6 @@ window.onload = function(){
     if(document.getElementById("pause").innerHTML == "pause"){
       clearTimeout(timeout);
       document.getElementById("pause").innerHTML = "Continue";
-      console.log(currentInfo.remainingTime);
     }
     else if(document.getElementById("pause").innerHTML == "Start"){
       document.getElementById("changeTimer").innerHTML = "Take a break";
