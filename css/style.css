@@ -1,0 +1,138 @@
+body{
+  overflow: hidden;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  user-select: none;
+  font-family: 'Droid Serif', serif;
+
+}
+#setTime{
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+.time{
+  flex-grow: 1;
+  text-align: center;
+}
+#options{
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.options{
+  flex-grow: 1;
+  text-align: center;
+}
+#timeDisplay{
+  text-align: center;
+  font-size: 4vh;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#workPlus, #workSubs, #breakPlus, #breakSubs, .options span{
+  cursor: pointer;
+}
+.options span{
+  border: solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.options{
+  font-size: 30px;
+  font-weight: bold;
+}
+#changeTimer{
+  font-size: 20px;
+  font-weight: normal;
+  display: none;
+}
+
+#outerClock{
+  font-family: serif;
+  position: absolute;
+  width: 72vh;
+  height: 72vh;
+  border: solid 1px black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  box-shadow: inset 0 0 20px black;
+}
+#fullClock{
+  color: white;
+  position: relative;
+  width: 65vh;
+  height: 65vh;
+  border: solid 1px;
+  border-radius: 50%;
+  transition: transform 1s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   background: radial-gradient(rgba(255,255,255,.6), red 90%);
+   box-shadow: 0 0 20px black;
+}
+#currentTime{
+  font-size: 15px;
+  position: absolute;
+  color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(270deg) translate(34.3vh) rotate(90deg);
+}
+#numberTimer{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  right: 10vh;
+}
+
+.minutes{
+  display: block;
+  position: absolute;
+  font-size: 3vh;
+  top: 50%;
+  left: 50%;
+}
+.minutes:before { display: block; content: "-"; transform: rotate(90deg); padding-left: 10px;}
+
+
+.deg0 { transform: translate(-50%, -50%) rotate(270deg) translate(30vh) rotate(90deg);}
+.deg14 { transform: translate(-50%, -50%) rotate(284.4deg) translate(30vh) rotate(90deg);}
+.deg28 { transform: translate(-50%, -50%) rotate(298.8deg) translate(30vh) rotate(90deg);}
+.deg43 { transform: translate(-50%, -50%) rotate(313.2deg) translate(30vh) rotate(90deg);}
+.deg57 { transform: translate(-50%, -50%) rotate(327.6deg) translate(30vh) rotate(90deg);}
+.deg72 { transform: translate(-50%, -50%) rotate(342deg) translate(30vh) rotate(90deg);}
+.deg86 { transform: translate(-50%, -50%) rotate(356.4deg) translate(30vh) rotate(90deg);}
+.deg100 { transform: translate(-50%, -50%) rotate(10.8deg) translate(30vh) rotate(90deg);}
+.deg115 { transform: translate(-50%, -50%) rotate(25.2deg) translate(30vh) rotate(90deg);}
+.deg129 { transform: translate(-50%, -50%) rotate(39.6deg) translate(30vh) rotate(90deg);}
+.deg144 { transform: translate(-50%, -50%) rotate(54deg) translate(30vh) rotate(90deg);}
+.deg158 { transform: translate(-50%, -50%) rotate(68.4deg) translate(30vh) rotate(90deg);}
+.deg172 { transform: translate(-50%, -50%) rotate(82.8deg) translate(30vh) rotate(90deg);}
+.deg187 { transform: translate(-50%, -50%) rotate(97.2deg) translate(30vh) rotate(90deg);}
+.deg201 { transform: translate(-50%, -50%) rotate(111.6deg) translate(30vh) rotate(90deg);}
+.deg216 { transform: translate(-50%, -50%) rotate(126deg) translate(30vh) rotate(90deg);}
+.deg230 { transform: translate(-50%, -50%) rotate(140.4deg) translate(30vh) rotate(90deg);}
+.deg244 { transform: translate(-50%, -50%) rotate(154.8deg) translate(30vh) rotate(90deg);}
+.deg259 { transform: translate(-50%, -50%) rotate(169.2deg) translate(30vh) rotate(90deg);}
+.deg273 { transform: translate(-50%, -50%) rotate(183.6deg) translate(30vh) rotate(90deg);}
+.deg288 { transform: translate(-50%, -50%) rotate(198deg) translate(30vh) rotate(90deg);}
+.deg302 { transform: translate(-50%, -50%) rotate(212.4deg) translate(30vh) rotate(90deg);}
+.deg316 { transform: translate(-50%, -50%) rotate(226.8deg) translate(30vh) rotate(90deg);}
+.deg331 { transform: translate(-50%, -50%) rotate(241.2deg) translate(30vh) rotate(90deg);}
+.deg345 { transform: translate(-50%, -50%) rotate(255.6deg) translate(30vh) rotate(90deg);}
